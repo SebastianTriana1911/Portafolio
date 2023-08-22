@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400&family=Montserrat&family=Poppins:wght@300&family=Tilt+Prism&display=swap');
+
+* {
+    /* font-family -> Cambio de fromato de texto */
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px
+}
+
+div#contenedor {
+    background-color: #191c32;
+    /* width: 100vw -> Ocupa el 100% de la anchura de la pantalla */
+    width: 100vw;
+    /* height: 100vh -> Ocupara el 100% de la altura de la pantalla  */
+    height: 100vh;
+    color: white;
+}
+
+div#barra-menu {
+    /* display: flex -> Posicionara tods los elementos dentro del eje x */
+    display: flex;
+    /* justify-content: space-between -> Distribulle el espacio de los elementos del
+    contenedor por todo el eje principal que este tenga */
+    justify-content: space-between;
+    padding: 2em;
+}
+
+div#logo span{
+    /* Este color modifica la T que esta en la parte superior izquierda del archivo */
+    color:aqua
+}
+
+div#logo {
+    font-size: 1.2em;
+    cursor:pointer;
+}
+
+ul#menu {
+    /* list-style: none -> Elimina todas las viñetas que contenga la lista / eliminando 
+    las viñetas que tiene el apartado del menu */
+    list-style: none;
+    /* Como todo el menu esta conformado por listas, display: flex permite que todo se 
+    integre un un solo eje */
+    display: flex;
+    /* width: 58% -> Hara que el menu se desplace el 58% de toda la pantalla */
+    width: 58%;
+    /* justify-content: space-between -> Distribulle el espacio entre los alrededores
+    del contenedor por todo el eje principal que este tenga */
+    justify-content: space-between;
+}
+
+li#inicio {
+    /* Al campo inicio se le modifica el color */
+    color:aqua
+}
+
+ul#menu li:hover {
+    /* Al pasar con el raton por cada uno de los menus emitira un contenedor de color aqua*/
+    background-color: aqua;
+    /* Para que haya un contraste a la hora de que se active el contenedor se activara el 
+    color de las letras en negro */
+    color: black;
+    /* Cada contenedor tendra un borde */
+    border-radius: 3px;
+    /* transition: ease-in -> Define un efecto de transicion lento dependiendo 
+    la cantidad de segundos que se le pasen en este caso 0.4s */
+    transition: ease-in 0.3s;
+    /* Cada que se pase por el menu y se active el contenedor las letras tendran un margen dentro
+    del contenedor de 1 pixel */
+    padding: 1px;
+    cursor: pointer;
+    box-shadow: 0 0 7px aqua;
+}
+
+div#informacion {
+    /* Crea un margen automaticamente para que los elementos queden centrados */
+    margin: auto;
+    /* Hace que el contenido abarque el 80% de la pantalla a lo ancho */
+    width: 80vw;
+    /* Hace que el contenido abarque el 80% de la pantalla a lo largo */
+    height: 80vh;
+    /* Agrupa todos los elementos en una columna, forma horizontal */
+    display: grid;
+    /* Acomoda el numero de elementos que se desea por columna**/
+    grid-template-columns: repeat(2,1fr);
+    /* Alinea todos los elementos hacia el centro */
+    align-items: center;
+    /* Crea un espacion entre los elementos */
+    gap: 60px;
+}
+
+div#info h1 {
+    font-size: 2.5em;
+}
+div#informacion span{
+    color: aqua;
+}
+
+img#imagen-1{
+    /* La imagen ocupara el 65% de toda la pantalla acoplandose a ella */
+    width: 65%;
+    border: 7px solid aqua;
+    box-shadow: 0 0 7px aqua;
+}
+
+img#imagen-1:hover{
+    box-shadow: 0 0 20px aqua;
+    transition: ease-in 0.4s;
+}
+
+div#contenedor button{
+    background-color: aqua;
+    border-radius: 20px;
+    font-size: 12pt;
+    border: none;
+    padding: 10px;
+    box-shadow: 0 0 6px aqua;
+    cursor: pointer;
+    /* añade margen de 15 pixeles para la parte de arriba */
+    margin-top: 15px;
+}
+
+div#contenedor button:hover{
+    background-color: white;
+    box-shadow: 0 0 9px white;
+    transition: ease-in 0.2s;
+}
+
+h3#linea-fin{
+    width: 100%;
+    height: 1px;
+    background-color: white;
+} 
+/*--------------------------------------------------------------------------------------*/
+
+div#contenedor-2{
+    background-color: #191c32;
+    width: 100vw;
+    height: 100vh;
+    color: white;
+}
+
+div#logo-2 span{
+    color:aqua
+}
+
+div#logo-2 {
+    padding: 2em;
+    font-size: 1.2em;
+    cursor: pointer;
+    padding-bottom: 0px;
+}
+
+div#columna {
+    margin: auto;
+    width: 80%;
+    height: 80%;
+    display:grid;
+    align-items: center;
+}
+
+div#habilidades h3{
+    font-size: 2em;
+}
+
+div#habilidades span{
+    color:aqua
+}
+
+div#sobre-mi h3{
+    font-size: 2em;
+    margin-top: 1px;
+}
+div#sobre-mi span{
+    color:aqua
+}
+
+div#linea1 {
+    background-color: aqua;
+    height: 3px;
+    width: 27%;
+    margin-bottom: 15px;
+    box-shadow: 0 0 10px aqua;
+}
+
+div#linea2 {
+    background-color: aqua;
+    height: 3px;
+    width: 20%;
+    margin-bottom: 15px;
+    box-shadow: 0 0 10px aqua;
+}
+
+div#boto {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: 20px;
+}
+
+div#boto button{
+    background-color: aqua;
+    border-radius: 20px;
+    font-size: 14pt;
+    border: none;
+    padding: 10px;
+    box-shadow: 0 0 6px aqua;
+    cursor: pointer;
+    width: 100px;
+}
+
+div#boto button:hover{
+    background-color: white;
+    box-shadow: 0 0 9px white;
+    transition: ease-in 0.2s
+}
+
+ul#a{
+    display:flex;
+    flex-wrap: wrap;
+    width: 80%;
+    padding: 0px;
+    justify-content: space-between;
+}
+
+div#h ul li{
+    background-color: white;
+    color:black; 
+    list-style:none;
+    border-radius: 3px;
+    box-shadow: 0 0 7px white;
+    font-size: 15pt;
+    margin:10px;
+}
+
+div#h li:hover{
+    padding: 2px;
+    box-shadow: 0 0 20px aqua;
+    cursor:pointer;
+}
+
+/*--------------------------------------------------------------------------------------*/
+
+div#contenedor-3{
+    background-color: #191c32;
+    width: 100vw;
+    height: 100vh;
+    color: white;
+}
+
+div#portafolio{
+    display: grid;
+    justify-content: center;
+    width: 30%;
+    margin: 0 auto;
+    font-size: 1.5em;
+    margin-top: -5px;
+}
+
+div#logo-3 span{
+    color:aqua
+}
+
+div#logo-3 {
+    padding: 2em;
+    font-size: 1.2em;
+    cursor: pointer;
+    padding-bottom: 0px;
+}
+
+div#linea3 {
+    background-color: aqua;
+    height: 3px;
+    width: 30%;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    box-shadow: 0 0 10px aqua;
+}
+
+div#conjunto {
+    width: 200px;
+    height: 300px;
+    background-color: #2a2f59;
+    padding: 8px;
+    border-radius: 6px;
+    border: 3px solid aqua;
+    box-shadow: 0 0 7px aqua;
+}
+
+div#bloque-imagen {
+    width: 100%;
+    height: 150px;
+    background-image: url(https://vidabytes.com/wp-content/uploads/2021/06/Mejor-programa-para-crear-p%C3%A1ginas-web-10.png);
+    /* Integra la imagen con sus modificaciones para que quede dentro de su contenedor */
+    background-size: cover;
+}
+
+div#titulo {
+    padding: 10px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12pt;
+}
+
+div#links {
+    display: flex;
+    /* Distribulle en espacios equitativos los diferentes elementos */
+    justify-content: space-evenly;
+    margin-bottom: 0.5em;
+}
+div#links a{
+    color: white;
+}
+
+div#links i{
+    font-size: 1.5em;
+}
+
+div#botones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button#descripcion a{
+    color:black;
+    text-decoration: none;
+}
+
+button#descripcion{
+    background-color: aqua;
+    border-radius: 20px;
+    font-size: 12pt;
+    border: none;
+    padding: 10px;
+    box-shadow: 0 0 6px aqua;
+    cursor: pointer;
+    width: 150px;
+    text-transform: uppercase;
+
+}
+
+button#descripcion:hover{
+    background-color: white;
+    box-shadow: 0 0 9px white;
+    transition: ease-in 0.2s
+}
+
+div#cantidad {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 45px;
+    
+}
+
+div#scroll {
+    overflow: auto;
+    background-color: #191c32;
+    margin: 10px 0px;
+    border: 5px solid aqua;
+    border-radius: 15px;
+    box-shadow: 0 0 10px aqua;
+    width: 70%;
+    height: 57%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+div#scroll:hover {
+    box-shadow: 0 0 20px aqua;
+}
