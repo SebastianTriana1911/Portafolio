@@ -3,10 +3,10 @@
 * {
     /* font-family -> Cambio de fromato de texto */
     font-family: 'Montserrat', sans-serif;
-    margin: 0px
+    margin: 0px;
 }
 
-div#contenedor {
+div#inicio {
     background-color: #191c32;
     /* width: 100vw -> Ocupa el 100% de la anchura de la pantalla */
     width: 100vw;
@@ -26,7 +26,7 @@ div#barra-menu {
 
 div#logo span{
     /* Este color modifica la T que esta en la parte superior izquierda del archivo */
-    color:aqua
+    color:aqua;
 }
 
 div#logo {
@@ -34,7 +34,7 @@ div#logo {
     cursor:pointer;
 }
 
-ul#menu {
+ul#opciones-menu {
     /* list-style: none -> Elimina todas las viñetas que contenga la lista / eliminando 
     las viñetas que tiene el apartado del menu */
     list-style: none;
@@ -53,7 +53,7 @@ li#inicio {
     color:aqua
 }
 
-ul#menu li:hover {
+ul#opciones-menu li:hover {
     /* Al pasar con el raton por cada uno de los menus emitira un contenedor de color aqua*/
     background-color: aqua;
     /* Para que haya un contraste a la hora de que se active el contenedor se activara el 
@@ -80,34 +80,34 @@ div#informacion {
     height: 80vh;
     /* Agrupa todos los elementos en una columna, forma horizontal */
     display: grid;
-    /* Acomoda el numero de elementos que se desea por columna**/
+    /* Acomoda el numero de elementos que se desea por columna */
     grid-template-columns: repeat(2,1fr);
     /* Alinea todos los elementos hacia el centro */
     align-items: center;
     /* Crea un espacion entre los elementos */
-    gap: 60px;
+    gap: 50px;
 }
 
 div#info h1 {
     font-size: 2.5em;
 }
-div#informacion span{
+div#informacion span#nombre-sebastian{
     color: aqua;
 }
 
-img#imagen-1{
+img#img-sebastian{
     /* La imagen ocupara el 65% de toda la pantalla acoplandose a ella */
     width: 65%;
     border: 7px solid aqua;
     box-shadow: 0 0 7px aqua;
 }
 
-img#imagen-1:hover{
-    box-shadow: 0 0 20px aqua;
+img#img-sebastian:hover{
+    box-shadow: 0 0 25px aqua;
     transition: ease-in 0.4s;
 }
 
-div#contenedor button{
+div#inicio button{
     background-color: aqua;
     border-radius: 20px;
     font-size: 12pt;
@@ -119,7 +119,7 @@ div#contenedor button{
     margin-top: 15px;
 }
 
-div#contenedor button:hover{
+div#inicio button:hover{
     background-color: white;
     box-shadow: 0 0 9px white;
     transition: ease-in 0.2s;
@@ -130,9 +130,10 @@ h3#linea-fin{
     height: 1px;
     background-color: white;
 } 
+
 /*--------------------------------------------------------------------------------------*/
 
-div#contenedor-2{
+div#sobre-mi{
     background-color: #191c32;
     width: 100vw;
     height: 100vh;
@@ -150,27 +151,33 @@ div#logo-2 {
     padding-bottom: 0px;
 }
 
-div#columna {
+div#info-complet {
     margin: auto;
     width: 80%;
     height: 80%;
     display:grid;
     align-items: center;
+    gap: 1em;
 }
 
-div#habilidades h3{
-    font-size: 2em;
+div#info-complet p {
+    font-size: 12pt;
 }
 
-div#habilidades span{
+div#sobre-mi-info h3{
+    font-size: 1.5em;
+    margin-top: 1px;
+}
+
+div#sobre-mi-info span{
     color:aqua
 }
 
-div#sobre-mi h3{
-    font-size: 2em;
-    margin-top: 1px;
+div#habilidades h3{
+    font-size: 1.5em;
 }
-div#sobre-mi span{
+
+div#habilidades span{
     color:aqua
 }
 
@@ -190,70 +197,36 @@ div#linea2 {
     box-shadow: 0 0 10px aqua;
 }
 
-div#boto {
+div#botones-sobremi {
     display: flex;
     justify-content: space-around;
-    position: relative;
     top: 20px;
 }
 
-div#boto button{
+div#botones-sobremi button{
     background-color: aqua;
     border-radius: 20px;
     font-size: 14pt;
     border: none;
-    padding: 10px;
+    padding: 10px 4px;
     box-shadow: 0 0 6px aqua;
     cursor: pointer;
     width: 100px;
+    margin-top: 10px;
 }
 
-div#boto button:hover{
+div#botones-sobremi button:hover{
     background-color: white;
     box-shadow: 0 0 9px white;
     transition: ease-in 0.2s
 }
+/*-------------------------------------------------------------------------------------------------*/
 
-ul#a{
-    display:flex;
-    flex-wrap: wrap;
-    width: 80%;
-    padding: 0px;
-    justify-content: space-between;
-}
-
-div#h ul li{
-    background-color: white;
-    color:black; 
-    list-style:none;
-    border-radius: 3px;
-    box-shadow: 0 0 7px white;
-    font-size: 15pt;
-    margin:10px;
-}
-
-div#h li:hover{
-    padding: 2px;
-    box-shadow: 0 0 20px aqua;
-    cursor:pointer;
-}
-
-/*--------------------------------------------------------------------------------------*/
-
-div#contenedor-3{
+div#portfolio{
     background-color: #191c32;
     width: 100vw;
     height: 100vh;
     color: white;
-}
-
-div#portafolio{
-    display: grid;
-    justify-content: center;
-    width: 30%;
-    margin: 0 auto;
-    font-size: 1.5em;
-    margin-top: -5px;
 }
 
 div#logo-3 span{
@@ -267,34 +240,59 @@ div#logo-3 {
     padding-bottom: 0px;
 }
 
+div#title{
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    margin: 0 auto;
+    font-size: 1.3em;
+    margin-top: -10px;
+}
+
 div#linea3 {
     background-color: aqua;
     height: 3px;
-    width: 30%;
+    width: 22%;
     margin: 0 auto;
     margin-bottom: 15px;
     box-shadow: 0 0 10px aqua;
 }
 
-div#conjunto {
-    width: 200px;
-    height: 300px;
-    background-color: #2a2f59;
-    padding: 8px;
-    border-radius: 6px;
-    border: 3px solid aqua;
-    box-shadow: 0 0 7px aqua;
+div#portfolio p{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
+div#contenedor-proyectos {
+    width: 200px;
+    height: 300px;
+    padding: 8px;
+    background-color: #2a2f59;
+    border-radius: 6px;
+    border: 3px solid aqua;
+    box-shadow: 0 0 5px aqua;
+}
+
+div#contenedor-proyectos:hover {
+    box-shadow: 0 0 10px aqua;
+}
+
+
 div#bloque-imagen {
-    width: 100%;
+    width: 96%;
     height: 150px;
     background-image: url(https://vidabytes.com/wp-content/uploads/2021/06/Mejor-programa-para-crear-p%C3%A1ginas-web-10.png);
     /* Integra la imagen con sus modificaciones para que quede dentro de su contenedor */
     background-size: cover;
+    border-radius: 10px;
+    border: 4px solid black;
+    box-shadow: 0 0 6px white;
 }
 
-div#titulo {
+div#titulo-proyecto {
     padding: 10px;
     display:flex;
     justify-content: center;
@@ -316,28 +314,22 @@ div#links i{
     font-size: 1.5em;
 }
 
-div#botones {
+div#botones-proyecto {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-button#descripcion a{
-    color:black;
-    text-decoration: none;
-}
-
 button#descripcion{
     background-color: aqua;
     border-radius: 20px;
-    font-size: 12pt;
     border: none;
-    padding: 10px;
+    padding: 8px;
     box-shadow: 0 0 6px aqua;
     cursor: pointer;
-    width: 150px;
+    width: 125px;
     text-transform: uppercase;
-
+    margin-top: 5px;
 }
 
 button#descripcion:hover{
@@ -346,13 +338,19 @@ button#descripcion:hover{
     transition: ease-in 0.2s
 }
 
-div#cantidad {
+button#descripcion a{
+    color:black;
+    text-decoration: none;
+}
+
+div#numero-proyectos {
     display: flex;
     justify-content: space-around;
     width: 100%;
     gap: 30px;
     flex-wrap: wrap;
     margin-top: 45px;
+    margin-bottom: 45px;
     
 }
 
@@ -368,10 +366,222 @@ div#scroll {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    margin-top: 20px;
+    margin-top: 15px;
     padding: 10px;
 }
 
 div#scroll:hover {
     box-shadow: 0 0 20px aqua;
+    transition: ease-in 0.2s;
 }
+
+div#boton-final-port {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+div#boton-final-port button{
+    background-color: aqua;
+    border-radius: 20px;
+    font-size: 13pt;
+    border: none;
+    padding: 10px 4px;
+    box-shadow: 0 0 6px aqua;
+    cursor: pointer;
+    width: 100px;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+
+div#boton-final-port button:hover{
+    background-color: white;
+    box-shadow: 0 0 9px white;
+    transition: ease-in 0.2s
+}
+
+/*--------------------------------------------------------------------------------------*/
+
+div#contactame{
+    background-color: #191c32;
+    width: 100vw;
+    height: 100vh;
+    color: white;
+}
+
+div#contactame-titulo {
+    width: 100%;
+    padding: 30px;
+    padding-bottom: 0px;
+    margin-left: 46px;
+    margin-top: 10px;
+}
+
+div#contactame-titulo h2 {
+    font-size: 2.5em;
+}
+
+form#formulario {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    margin: 0 auto;
+}
+
+form#formulario input {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 15px 10px;
+    border-radius: 10px;
+    border: 4px solid aqua;
+    background-color: #191c32;
+    color: white;
+    outline: none;
+    box-shadow: 0 0 5px aqua;
+} 
+
+form#formulario input::placeholder{
+    color:white;
+}
+
+form#formulario input:hover {
+    box-shadow: 0 0 15px aqua;
+    transition: ease-in 0.2s;
+}
+
+div#linea-4 {
+    background-color: aqua;
+    height: 3px;
+    width: 20%;
+    margin-bottom: 15px;
+    box-shadow: 0 0 10px aqua;
+}
+
+form#formulario textarea{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 15px 10px;
+    border-radius: 10px;
+    border: 4px solid aqua;
+    background-color: #191c32;
+    color: white;
+    outline: none;
+    box-shadow: 0 0 5px aqua;
+    resize: none;
+    margin-bottom: -5px;
+}
+
+form#formulario textarea::placeholder{
+    color:white
+}
+
+form#formulario textarea:hover{
+    box-shadow: 0 0 15px aqua;
+    transition: ease-in 0.2s;
+}
+
+div#boto{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+div#boto  button{
+    width: 27%;
+    background-color: aqua;
+    border-radius: 20px;
+    font-size: 13pt;
+    border: none;
+    padding: 10px 4px;
+    box-shadow: 0 0 6px aqua;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+
+div#boto  button:hover {
+    background-color: white;
+    transition: ease-in 0.2s;
+    box-shadow: 0 0 7px white;
+}
+
+div#boton-reseña {
+    margin-top: -50px;
+}
+
+a#reseña {
+    background-color: rgba(0, 255, 255, 0.825);
+    display: flex;
+    font-size: 1.5em;
+    border-radius: 100px;
+    width: 30px;
+    padding: 14px;
+    justify-content: center;
+    margin-left: 80%;
+    margin-bottom: 0%;
+    text-decoration: none;
+    box-shadow: 0 0 10px aqua;
+}
+
+a#reseña:hover {
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.825);
+}
+
+div#boton-reseña i{
+    color: white;
+}
+
+/*--------------------------------------------------------------------------------------*/
+
+footer#footer {
+    background-color: aqua;
+    width: 100vw;
+    height: 220px;
+}
+
+footer#footer:hover {
+    box-shadow: 0 0 50px aqua;
+    transition: 0.2s;
+}
+div#logo-4{
+    display: flex;
+    justify-content: center;
+    font-size: 1.3em;
+    padding-top: 25px;
+    padding-bottom: 17px;
+    cursor:pointer;
+}
+
+div#contenido-footer h3 {
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    padding-bottom: 17px;
+}
+
+div#descripcion h5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5px;
+}
+
+div#aplicaciones {
+    display: flex;
+    justify-content: center; 
+    padding-top: 18px;
+}
+
+div#aplicaciones a{
+    color: black;
+    display: flex;
+    text-decoration: none;
+    justify-content: space-evenly;
+    width: 8%;
+    font-size: 16pt;
+}
+
+
+
+
+
